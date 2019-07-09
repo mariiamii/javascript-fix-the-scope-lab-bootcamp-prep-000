@@ -18,18 +18,4 @@ var funkyFunction = function() {
     return "FUNKY!"
   }
 }
-
-var theFunk = funkyFunction
-
-// instructions
-describe('funkyFunction()', function() {
-    it('returns a function', function() {
-      expect(typeof window.funkyFunction()).toEqual('function')
-    })
-  })
-
-  describe('theFunk', function() {
-    it('is "FUNKY!"', function() {
-      expect(window.theFunk).toEqual('FUNKY!')
-    })
-  })
+var theFunk = funkyFunction()()
